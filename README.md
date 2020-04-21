@@ -2,6 +2,8 @@
 
 最近在研究一项浏览器下载机制，或许我的研究不会成功，但是也在尝试中。。。
 
+//浏览器下载文件代码
+
 downloadContract = (params) => {
 
     fetch.DOWNLOAD_CONTRACT(params).then(res => {
@@ -9,6 +11,7 @@ downloadContract = (params) => {
         if (res.status) {
         
             this.openDownloadDialog(`http://${res.data.zipFilePath_arr}`,`${res.data.zipFilePath_arr}`)
+            （该方法等同于window.open(`http://${res.data.zipFilePath_arr}`)）
             
         }
         
