@@ -110,3 +110,230 @@ http://download.pchome.net/php/tdownload2.php?sid=5547&url=/multimedia/viewer/ac
      好了，原理基本上就是这些了。其实装个Sniffer好好分析一下，很容易就可以分析出来的。不过NetAnts也帮了我一些忙，它的文件下载日志对开发人员还是很有帮助的。
 
 本文引自：http://hi.baidu.com/chinessnetstone/blog/item/603d20094009468ad0581b23.html
+
+扩展window对象有以下方法：
+open
+close
+alert
+confirm
+prompt
+setTimeout
+clearTimeout
+setInterval
+clearInterval
+moveBy
+moveTo
+resizeBy
+resizeTo
+scrollBy
+scrollTo
+find
+back
+forward
+home
+stop
+print
+blur
+focus
+captureEvent
+enableExternalCapture
+disableExternalCapture
+handleEvent
+releaseEvent
+routeEvent
+scroll
+　　1. open方法
+　　语法格式：
+window.open(URL,窗口名称,窗口风格)
+　　功能：打开一个新的窗口，并在窗口中装载指定URL地址的网页。
+　　说明：
+open方法用于打开一个新的浏览器窗口，并在新窗口中装入一个指定的URL地址；
+open方法在打开一个新的浏览器窗口时，还可以指定窗口的名称(第二个参数)；
+open方法在打开一个新的浏览器窗口时，还可以指定窗口的风格(第三个参数)，
+窗口风格有以下选项，这些选项可以多选，如果多选，各选项之间用逗号分隔：
+toolbar：指定窗口是否有标准工具栏。当该选项的值为1或yes时，表示有标准工具栏，当该选项的值为0或no时，表示没有标准工具栏；
+location：指定窗口是否有地址工具栏，选项的值及含义与toolbar相同；
+directories：指定窗口是否有链接工具栏，选项的值及含义与toolbar相同；
+status：指定窗口是否有状态栏，选项的值及含义与toolbar相同；
+menubar：指定窗口是否有菜单，选项的值及含义与toolbar相同；
+scrollbar：指定当前窗口文档大于窗口时是否有滚动条，选项的值及含义与toolbar相同；
+resizable：指定窗口是否可改变大小，选项的值及含义与toolbar相同；
+width：以像素为单位指定窗口的宽度，已被innerWidth取代；
+height：以像素为单位指定窗口的高度，已被innerHeight取代；
+outerWidth：以像素为单位指定窗口的外部宽度；
+outerHeight：以像素为单位指定窗口的外部高度；
+left：以像素为单位指定窗口距屏幕左边的位置；
+top：以像素为单位指定窗口距屏幕顶端的位置；
+alwaysLowered：指定窗口隐藏在所有窗口之后，选项的值及含义与toolbar相同；
+alwaysRaised：指定窗口浮在所有窗口之上，选项的值及含义与toolbar相同；
+dependent：指定打开的窗口为当前窗口的一个子窗口，并随着父窗口的关闭而关闭，选项的值及含义与toolbar相同；
+hotkeys：在没有菜单栏的新窗口中设置安全退出的热键，选项的值及含义与toolbar相同；
+innerHeight：设定窗口中文档的像素高度；
+innerWidth：设定窗口中文档的像素宽度；
+screenX：设定窗口距离屏幕左边界7a686964616fe59b9ee7ad9431333264663631的像素长度；
+screenY：设定窗口距离屏幕上边界的像素长度；
+titleBar：指明标题栏是否在新窗口中可见，选项的值及含义与toolbar相同；
+z-look：指明当窗口被激活时，不能浮在其它窗口之上，选项的值及含义与toolbar相同。
+open方法返回的是该窗口的引用。
+2. close方法
+语法格式：
+window.close()
+功能：close方法用于自动关闭浏览器窗口。
+3. alert方法
+语法格式：
+window.alert(提示字符串)
+功能：弹出一个警告框，在警告框内显示提示字符串文本。
+4. confirm方法
+语法格式：
+window.confirm(提示字符串)
+功能：显示一个确认框，在确认框内显示提示字符串，当用户单击“确定”按钮
+时该方法返回true，单击“取消”时返回false。
+5. prompt方法
+语法格式：
+window.prompt(提示字符串，缺省文本)
+功能：显示一个输入框，在输入框内显示提示字符串，在输入文本框显示缺省文
+本，并等待用户输入，当用户单击“确定”按钮时，返回用户输入的字符串，当
+单击“取消”按钮时，返回null值。
+6. setTimeout方法
+语法格式：
+window.setTimeout(代码字符表达式,毫秒数)
+功能：定时设置，当到了指定的毫秒数后，自动执行代码字符表达式。
+7. clearTimeout方法
+语法格式：
+window.clearTimeout(定时器)
+功能：取消以前的定时设置，其中的参数是用setTimeout设置时的返回值。
+8. setInterval方法
+语法格式：
+window.setInterval(代码字符表达式,毫秒数)
+功能：设定一个时间间隔后(第二个参数)，反复执行“代码字符表达式”的内容
+9. clearInterval方法
+语法格式：
+window.clearInterval(时间间隔器)
+功能：取消setInterval设置的定时。其中的参数是setInterval方法的返回值。
+10. moveBy方法
+语法格式：
+window.moveBy(水平位移量,垂直位移量)
+功能：按照给定像素参数移动指定窗口。第一个参数是窗口水平移动的像素，第
+二个参数是窗口垂直移动的像素。
+11.moveTo方法
+语法格式：
+window.moveTo(x,y)
+功能：将窗口移动到指定的指定坐标(x,y)处。
+12. resizeBy方法
+语法格式：
+window.resizeBy(水平,垂直)
+功能：将当前窗口改变指定的大小(x,y)，当x、y的值大于0时为扩大，小于0时
+为缩小。
+13. resizeTo方法
+语法格式：
+window.resizeTo(水平宽度,垂直宽度)
+功能：将当前窗口改变成(x,y)大小，x、y分别为宽度和高度。
+14. scrollBy方法
+语法格式：
+window.scrollBy(水平位移量，垂直位移量)
+功能：将窗口中的内容按给定的位移量滚动。参数为正数时，正向滚动，否则反
+向滚动。
+15. scrollTo方法
+语法格式：
+window.scrollTo(x,y)
+功能：将窗口中的内容滚动到指定位置。
+16.find方法
+语法格式：
+window.find()
+功能：当触发该方法时，将弹出一个“find”(查找)对话窗口，并允许用户在触
+发find方法的页面中查找一个字符串。
+注：该属性在IE5.5及Netscape6.0中都不支持。
+17. back方法
+语法格式：
+window.back()
+功能：模拟用户点击浏览器上的“后退”按钮，将页面转到浏览器的上一页。
+说明：仅当当前页面存在上一页时才能进行该操作。
+注：IE5.5不支持该方法，Netscape6.0支持。
+18. forward方法
+语法格式：
+window.forward()
+功能：模拟用户点击浏览器上的“前进”按钮，将页面转到浏览器的下一页。
+说明：仅当当前页面存在下一页时才能进行该操作。
+注：IE5.5不支持该方法，Netscape6.0支持。
+19. home方法
+语法格式：
+window.home()
+功能：模拟用户点击浏览器上的“主页”按钮，将页面转到指定的页面上。
+注：IE5.5不支持该方法，Netscape6.0支持。
+20. stop方法
+语法格式：
+window.stop()
+功能：模拟用户点击浏览器上的“停止”按钮，终止浏览器的下载操作。
+注：IE5.5不支持该方法，Netscape6.0支持。
+21. print方法
+语法格式：
+window.print()
+功能：模拟用户点击浏览器上的“打印”按钮，通知浏览器打开打印对话框打印
+当前页。
+22. blur方法
+语法格式：
+window.blur()
+功能：从窗口中移出焦点。当与focus方法合用时必须小心，因为可能导致焦点
+不断移进移出。
+23. focus方法
+语法格式：
+window.focus()
+功能：使窗口中得到焦点。当与blur方法合用时必须小心，因为可能导致焦点不
+断移进移出。
+24. captureEvent方法
+语法格式：
+window.captureEvent(Event)
+window.captureEvent(事件1|事件2|...|事件n)
+功能：捕捉指定参数的所有事件。由于能够捕获哪些由本地程序自己处理的事件
+，所以程序员可以随意定义函数来处理事件。如果有多个事件需要捕捉，各事件
+之间用管道符“|”隔开。可捕捉的事件类型如下：
+Event.ABORT
+Event.BLUR
+Event.CHANGE
+Event.CLICK
+Event.DBLCLICK
+Event.DRAGDROP
+Event.ERROR
+Event.FOCUS
+Event.KEYDOWN
+Event.KEYPRESS
+Event.KEYUP
+Event.LOAD
+Event.MOUSEDOWN
+Event.MOUSUEMOVE
+Event.MOUSEOUT
+Event.MOUSEOVER
+Event.MOUSEUP
+Event.MOVE
+Event.RESET
+Event.RESIZE
+Event.SELECT
+Event.SUBMIT
+Event.UNLOAD
+25. enableExternalCapture事件
+语法格式：
+window.enableExternalCapture(event)
+功能：enableExternalCapture方法用于捕捉通过参数传入的外部事件。
+26. disableExternalCapture事件
+语法格式：
+window.disableExternalCapture()
+功能：取消enableExternalCapture方法的设置，终止对外部事件的捕捉。
+27. handleEvent事件
+语法格式：
+window.handleEvent(event)
+功能：触发指定事件的事件处理器。
+28. releaseEvent事件
+语法格式：
+window.releaseEvent(event)
+window.releaseEvent(事件1|事件2|...|事件n)
+功能：释放通过参数传入的已被捕捉的事件，这些事件是由
+window.captureEvent方法设置的，可释放的事件与captureEvent相同。
+29. routeEvent事件
+语法格式：
+window.releaseEvent(event)
+功能：把被捕捉类型的所有事件转交给标准事件处理方法进行处理，可转交的事
+件与captureEvent相同。
+30 scroll事件
+语法格式：
+window.scroll(X坐标,Y坐标)
+功能：将窗口移动到指定的坐标位置。
