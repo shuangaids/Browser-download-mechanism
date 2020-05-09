@@ -1,8 +1,11 @@
-# Browser-download-mechanism
+# Browser-study
 
-最近在研究一项浏览器下载机制，或许我的研究不会成功，但是也在尝试中。。。
+深入理解浏览器原理：
 
-主要目的是领导要求各种浏览器下载时候的默认弹框去掉，拦截去掉。我说了做不到，但是领导显然不喜欢这个答案，所以就有了下面的研究begin...
+https://www.cnblogs.com/xiaohuochai/p/9174471.html
+
+https://zhuanlan.zhihu.com/p/47407398
+
 
 //浏览器下载文件代码
 
